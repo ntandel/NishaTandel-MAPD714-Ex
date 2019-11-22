@@ -12,6 +12,8 @@
 		2696ECFB2387882F004956CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2696ECF92387882F004956CC /* Main.storyboard */; };
 		2696ECFD23878830004956CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2696ECFC23878830004956CC /* Assets.xcassets */; };
 		2696ED0023878830004956CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2696ECFE23878830004956CC /* LaunchScreen.storyboard */; };
+		2696ED08238788D6004956CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2696ED07238788D6004956CC /* GoogleService-Info.plist */; };
+		C2D2108453FA1F92EB15317A /* Pods_NishaTandel_MAPD714_Ex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FBD331B385F3A00A66C4CF /* Pods_NishaTandel_MAPD714_Ex.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		2696ECFC23878830004956CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2696ECFF23878830004956CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2696ED0123878830004956CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2696ED07238788D6004956CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		49ACB1882F334730116C631A /* Pods-NishaTandel-MAPD714-Ex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NishaTandel-MAPD714-Ex.debug.xcconfig"; path = "Target Support Files/Pods-NishaTandel-MAPD714-Ex/Pods-NishaTandel-MAPD714-Ex.debug.xcconfig"; sourceTree = "<group>"; };
+		82FBD331B385F3A00A66C4CF /* Pods_NishaTandel_MAPD714_Ex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NishaTandel_MAPD714_Ex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9264B7EE54478932F758AB2D /* Pods-NishaTandel-MAPD714-Ex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NishaTandel-MAPD714-Ex.release.xcconfig"; path = "Target Support Files/Pods-NishaTandel-MAPD714-Ex/Pods-NishaTandel-MAPD714-Ex.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2D2108453FA1F92EB15317A /* Pods_NishaTandel_MAPD714_Ex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CD8C54B11B521B4161204CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82FBD331B385F3A00A66C4CF /* Pods_NishaTandel_MAPD714_Ex.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2696ECE92387882E004956CC = {
 			isa = PBXGroup;
 			children = (
 				2696ECF42387882F004956CC /* NishaTandel-MAPD714-Ex */,
 				2696ECF32387882F004956CC /* Products */,
+				6D8503ECDDBF39478C02EB2C /* Pods */,
+				0CD8C54B11B521B4161204CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +75,21 @@
 				2696ECF72387882F004956CC /* ViewController.swift */,
 				2696ECF92387882F004956CC /* Main.storyboard */,
 				2696ECFC23878830004956CC /* Assets.xcassets */,
+				2696ED07238788D6004956CC /* GoogleService-Info.plist */,
 				2696ECFE23878830004956CC /* LaunchScreen.storyboard */,
 				2696ED0123878830004956CC /* Info.plist */,
 			);
 			path = "NishaTandel-MAPD714-Ex";
+			sourceTree = "<group>";
+		};
+		6D8503ECDDBF39478C02EB2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49ACB1882F334730116C631A /* Pods-NishaTandel-MAPD714-Ex.debug.xcconfig */,
+				9264B7EE54478932F758AB2D /* Pods-NishaTandel-MAPD714-Ex.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2696ED0423878830004956CC /* Build configuration list for PBXNativeTarget "NishaTandel-MAPD714-Ex" */;
 			buildPhases = (
+				98945836EC03C7341F47871B /* [CP] Check Pods Manifest.lock */,
 				2696ECEE2387882E004956CC /* Sources */,
 				2696ECEF2387882E004956CC /* Frameworks */,
 				2696ECF02387882E004956CC /* Resources */,
+				16AFD554208024449226A487 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +153,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				2696ED0023878830004956CC /* LaunchScreen.storyboard in Resources */,
+				2696ED08238788D6004956CC /* GoogleService-Info.plist in Resources */,
 				2696ECFD23878830004956CC /* Assets.xcassets in Resources */,
 				2696ECFB2387882F004956CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16AFD554208024449226A487 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NishaTandel-MAPD714-Ex/Pods-NishaTandel-MAPD714-Ex-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NishaTandel-MAPD714-Ex/Pods-NishaTandel-MAPD714-Ex-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NishaTandel-MAPD714-Ex/Pods-NishaTandel-MAPD714-Ex-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98945836EC03C7341F47871B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NishaTandel-MAPD714-Ex-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2696ECEE2387882E004956CC /* Sources */ = {
@@ -280,6 +353,7 @@
 		};
 		2696ED0523878830004956CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49ACB1882F334730116C631A /* Pods-NishaTandel-MAPD714-Ex.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +371,7 @@
 		};
 		2696ED0623878830004956CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9264B7EE54478932F758AB2D /* Pods-NishaTandel-MAPD714-Ex.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
